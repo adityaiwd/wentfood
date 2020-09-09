@@ -5,12 +5,9 @@ import {
   AppBar,
   Toolbar,
   Typography,
-  Menu,
-  MenuItem,
-  IconButton,
   Container,
 } from "@material-ui/core";
-import FastfoodRoundedIcon from '@material-ui/icons/FastfoodRounded';
+import FastfoodRoundedIcon from "@material-ui/icons/FastfoodRounded";
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,10 +21,11 @@ const useStyles = makeStyles((theme) => ({
   },
   title: {
     flexGrow: 1,
-    color:"black",
-    fontFamily:"Nexa",
-    fontSize: 30,
-    cursor:"pointer"
+    margin:-25,
+    color: "black",
+    fontFamily: "Nexa",
+    fontSize: 25,
+    cursor: "pointer",
   },
   sectionMobile: {
     display: "flex",
@@ -37,9 +35,14 @@ const useStyles = makeStyles((theme) => ({
   },
   navButton: {
     marginLeft: 20,
-    fontFamily:"Nexa",
+    marginRight:-25,
+    fontFamily: "Nexa",
     textTransform: "none",
-    backgroundColor:"#29A34E"
+    backgroundColor: "#00A7E1",
+    "&:hover": {
+      backgroundColor: "#007AA3",
+      color: "#FFF",
+    },
   },
 }));
 
@@ -47,19 +50,29 @@ function Navbar() {
   const classes = useStyles();
   return (
     <div className={classes.root}>
-      <AppBar style={{backgroundColor:"white",paddingTop: 5,paddingBottom: 5}}>
-          <Container maxWidth="lg">
-            <Toolbar>
+      <AppBar
+        style={{ backgroundColor: "white", paddingTop: 2, paddingBottom: 2}}
+      >
+        <Container maxWidth="lg">
+          <Toolbar>
             <Typography className={classes.title} variant="h6">
-            <FastfoodRoundedIcon fontSize="large" style={{marginRight:10}}/>
+              <FastfoodRoundedIcon
+                fontSize="large"
+                style={{ marginRight: 10 }}
+              />
               wentfood
             </Typography>
-            <Typography className={classes.sectionDesktop}  style={{color:"black",fontFamily:"Nexa"}} variant="h6">
-              Dapetin app wentjek
+            <Typography
+              style={{ color: "black", fontFamily: "Nexa", fontSize:17}}
+              variant="h6"
+            >
+              Dapetin app Wentjek
             </Typography>
-            <Button color="inherit" className={classes.navButton}>Download</Button>
-        </Toolbar>
-          </Container>
+            <Button color="inherit" className={classes.navButton}>
+              Download
+            </Button>
+          </Toolbar>
+        </Container>
       </AppBar>
     </div>
   );

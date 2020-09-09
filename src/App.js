@@ -2,6 +2,10 @@ import React, { useState } from "react";
 import "./style.css";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";
+import Content from "./components/Content";
+import Download from "./components/Download";
+import Footer from "./components/Footer";
+
 // const Post = (props) => <img src={props.src} alt="post" />;
 // const Profile = (props) => {
 //   const [isFollowed, setIsFollowed] = useState(false);
@@ -39,11 +43,13 @@ import Jumbotron from "./components/Jumbotron";
 
 
 function App() {
-  // const username = "instagram";
   return (
     <div>
       <Navbar />
       <Jumbotron />
+      <Content />
+      <Download />
+      <Footer/>
     </div>
   );
 }

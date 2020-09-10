@@ -65,6 +65,7 @@ function Navbar() {
             <Typography
               style={{ color: "black", fontFamily: "Nexa", fontSize:17}}
               variant="h6"
+              className={classes.sectionDesktop}
             >
               Dapetin app Wentjek
             </Typography>

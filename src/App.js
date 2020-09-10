@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./style.css";
 import Navbar from "./components/Navbar";
 import Jumbotron from "./components/Jumbotron";

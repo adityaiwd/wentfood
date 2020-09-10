@@ -3,13 +3,7 @@ import Background from "../assets/jumbotronbg2.jpg";
 import {
   Button,
   makeStyles,
-  AppBar,
-  Toolbar,
-  Typography,
-  Menu,
-  MenuItem,
-  IconButton,
-  Container,
+  Typography
 } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
